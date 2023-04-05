@@ -40,6 +40,9 @@ class ADungeon_CrawlCharacter : public ACharacter
 	class UInputAction* MoveAction;
 
 	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	class UInputAction* GrabAction;
+
 public:
 	ADungeon_CrawlCharacter();
 
